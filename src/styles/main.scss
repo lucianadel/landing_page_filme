@@ -1,0 +1,20 @@
+$bgColor:blue;
+
+@import "variables";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $black;
+    color: $white;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+}
+
+/* ... outros estilos ... */
+
+@media (max-width: 768px) {
+    /* Estilos para telas menores */
+}
