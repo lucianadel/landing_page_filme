@@ -1,3 +1,101 @@
+@charset "UTF-8";
+/* Variáveis (opcional, para facilitar a manutenção) */
+/* Estilos gerais */
 body {
-  background-color: blue;
+  font-family: sans-serif;
+  margin: 0;
+  text-align: center;
+  /* Centraliza o conteúdo da página */
+  background-color: #f0f0f0;
+  /* Cor de fundo principal */
+  background-image: url("https://img.freepik.com/fotos-gratis/edificios-da-cidade-desafiando-as-leis-da-gravidade-flutuando-no-ar_23-2151122578.jpg?w=1380&t=st=1726273199~exp=1726273799~hmac=f3b02a2fc391a6bc831e36c9dcf41d7f4cb27e71b02fb935fdacccb035017974");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+h2 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #f5f5f5;
+  text-shadow: 4px 4px 4px #000;
+}
+
+h1 {
+  color: #f1c40f;
+  text-shadow: 4px 4px 4px #000;
+}
+
+p {
+  color: #f1c40f;
+  text-shadow: 4px 4px 4px #000;
+}
+
+.elenco__item {
+  list-style: none;
+  width: calc(33.33% - 20px);
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.elenco__imagem {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.elenco {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Centraliza os itens horizontalmente */
+  align-items: center;
+  /* Centraliza os itens verticalmente   
+  */
+  padding: 20px;
+}
+
+.elenco li {
+  list-style: none;
+  width: calc(33.33% - 20px);
+  /* Ajusta a largura para 3 colunas */
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #f5f5f5;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  .elenco__item {
+    width: 100%;
+  }
+}
+.fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Centraliza os itens horizontalmente */
+}
+
+.fotos li {
+  list-style: none;
+  width: calc(33.33% - 20px);
+  /* Ajusta a largura para 3 colunas */
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.fotos img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
