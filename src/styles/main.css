@@ -1,33 +1,14 @@
 @charset "UTF-8";
-/* styles.scss */
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f7f2e8;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
 }
 
-.container {
-  max-width: 1200px;
-  padding: 2rem;
+#container-article {
   background-color: #485460;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   text-align: center;
-}
-
-/* Cabeçalho */
-header {
-  background-color: #fff;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 h2 {
@@ -38,23 +19,6 @@ h1 {
   color: #485460;
 }
 
-.nav-list {
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-}
-
-.nav-list li a {
-  text-decoration: none;
-  /* Outras propriedades de estilo, como cor, fonte, etc. */
-  color: #485460;
-}
-
 /* Seção Hero */
 .hero {
   text-align: center;
@@ -62,21 +26,22 @@ h1 {
   width: 100%;
 }
 
+.hero-content {
+  padding-top: 2rem;
+}
+
 /* Seções Sinopse e Elenco */
 .sinopse,
 .elenco {
   text-align: center;
-  padding: 1rem;
-  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .fotos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  /* Distribui os itens com espaço igual entre eles */
-  align-items: center;
-  /* Centraliza os itens verticalmente */
+  justify-content: space-between;
 }
 
 .fotos li {
@@ -84,8 +49,6 @@ h1 {
   /* Remove os marcadores da lista */
   text-align: center;
   flex: 1;
-  /* Faz com que cada item ocupe o mesmo espaço disponível */
-  color: aqua;
 }
 
 .fotos img {
@@ -103,6 +66,10 @@ h1 {
 }
 
 /* Dispositivos */
+.dispositivos {
+  padding-top: 2rem;
+}
+
 .dispositivos ul {
   display: flex;
   flex-wrap: wrap;
