@@ -1,40 +1,54 @@
+$cor-principal: #485460;
+$cor-secundaria: #fff;
+$cor-backgroud-btn:  #333;
+$cor-backgroud-btn-hover:  #222;
+
+$fonte-principal: 'Montserrat', sans-serif;
+$padding-secoes: 2rem;
+$largura-sidebar: 300px;
+
+
+
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fonte-principal;
     margin: 0;
 }
 
 #container-article {
-    background-color: #485460;
+    background-color: $cor-principal;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
 }
 
 h2 {
-    color: #fff;
+    color: $cor-secundaria;
+
+
 }
 
 h1 {
-    color: #485460;
+    color: $cor-principal;
 }
 
 /* Seção Hero */
 .hero {
     text-align: center;
-    padding: 2rem;
+    padding: $padding-secoes;
     width: 100%;
 }
 
 .hero-content {
-    padding-top: 2rem;
+    padding-top: $padding-secoes;
 }
 
 /* Seções Sinopse e Elenco */
 .sinopse,
 .elenco {
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: $padding-secoes;
+    padding-right: $padding-secoes;
 }
 
 .fotos {
@@ -61,12 +75,12 @@ h1 {
 .sidebar {
     text-align: center;
     padding: 1rem;
-    width: 300px;
+    width: $largura-sidebar;
 }
 
 /* Dispositivos */
 .dispositivos {
-    padding-top: 2rem;
+    padding-top:$padding-secoes;
 }
 
 .dispositivos ul {
@@ -84,8 +98,8 @@ h1 {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: $cor-backgroud-btn;
+    color: $cor-secundaria;
     font-weight: bold;
     text-decoration: none;
     /* Remove o underline do link */
@@ -97,18 +111,18 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #222;
+    background-color: $cor-backgroud-btn-hover;
     /* Muda a cor de fundo ao passar o mouse */
 }
 
 /* Rodapé */
 footer {
-    background-color: #485460;
+    background-color: $cor-principal;
     padding: 1rem;
     text-align: center;
     width: 100%;
 }
 
 p {
-    color: #fff;
+    color: $cor-secundaria;
 }
